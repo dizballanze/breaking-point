@@ -1,7 +1,9 @@
 breaking-point.py
-==========
+=================
 
-breaking-point.py helps to find a size of input data where one function starts outperform another function. It is a convenient way to compare different algorithms for a single task.
+breaking-point.py helps to find a size of input data where one function starts outperform
+another function. It is a convenient way to compare different algorithms for a single
+task.
 
 INSTALLATION
 ------------
@@ -9,7 +11,6 @@ INSTALLATION
 ::
     
     pip install breaking-point
-
 
 USAGE
 -----
@@ -32,12 +33,10 @@ there
 
 Function returns ``n0`` - size of input data for which ``f2(n0)`` executed faster than  ``f1(n0)`` or ``None`` if reaches limit.
 
-
 EXAMPLE
 -------
 
 See ``example.py``.
-
 
 LICENSE
 -------
