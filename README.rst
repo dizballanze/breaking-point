@@ -36,6 +36,8 @@ Function returns ``n0`` - size of input data for which ``f2(n0)`` executed faste
 EXAMPLE
 -------
 
+See ``example.py``.
+
 
 LICENSE
 -------
