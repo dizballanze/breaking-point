@@ -6,10 +6,10 @@ def find_max_subarray_brutforce(a):
     """
     Find maximum sub array of `a`. O(n*n).
     """
-    max_sum = -sys.maxint-1
-    for i in xrange(0, len(a)):
+    max_sum = -sys.maxsize-1
+    for i in range(0, len(a)):
         curr_sum = 0
-        for j in xrange(i, len(a)):
+        for j in range(i, len(a)):
             curr_sum += a[j]
             if curr_sum > max_sum:
                 max_sum = curr_sum
@@ -19,16 +19,16 @@ def find_max_subarray_brutforce(a):
 
 def _find_mid(a, start, middle, end):
     """ Find max subarray that includes middle point """
-    left_sum = -sys.maxint - 1
+    left_sum = -sys.maxsize - 1
     curr_sum = 0
-    for i in xrange(middle, start - 1, -1):
+    for i in range(middle, start - 1, -1):
         curr_sum += a[i]
         if curr_sum > left_sum:
             max_left = i
             left_sum = curr_sum
-    right_sum = -sys.maxint - 1
+    right_sum = -sys.maxsize - 1
     curr_sum = 0
-    for i in xrange(middle+1, end+1):
+    for i in range(middle+1, end+1):
         curr_sum += a[i]
         if curr_sum > right_sum:
             max_right = i

@@ -16,7 +16,7 @@ def find_breaking_point(f1, f2, input_generator, start=1, step=1,
     returns n0 - size of input data for which f2(n0) is faster than f1(n0)
             or None if reaches limit.
     """
-    for n in xrange(start, limit+1):
+    for n in range(start, limit+1):
         curr_input = input_generator(n)
         # Test first function
         f1_results = timeit.repeat(lambda: f1(*curr_input[0], **curr_input[1]),
